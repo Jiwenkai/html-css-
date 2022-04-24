@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>子选择器</title>
+        <style>
+            .father>a {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+<!--        子选择器只选择最近的元素,亲儿子-->
+        <div class="father">
+            <a href="#">123</a>
+            <p>
+                <a href="#">4444</a>
+            </p>
+        </div>
+    </body>
+</html>

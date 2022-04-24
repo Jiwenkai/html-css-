@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>盒子阴影</title>
+        <style>
+            div {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+                margin: 0 auto;
+                /*box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.3);*/
+                /*后面加一个inset阴影就在盒子里面，默认是outset*/
+            }
+            /*原先盒子没有阴影，当鼠标经过添加阴影效果*/
+            div:hover {
+                box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.3);
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+
+    </body>
+</html>

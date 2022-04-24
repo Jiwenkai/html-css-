@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>权重叠加</title>
+        <style>
+            /*复合选择器会有权重叠加的问题*/
+            /*ul li的权重是0，0，0，1 + 0，0，0，1 = 0，0，0，2*/
+            ul li {
+                color: green;
+            }
+            /*li的权重为 0，0，0，1*/
+            li {
+                color: red;
+            }
+            /*.nav li 的权重是0，0，1，0 + 0，0，0，1 = 0，0，，1，1*/
+            .nav li {
+                color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="nav">
+            <li>123</li>
+            <li>456</li>
+            <li>789</li>
+        </ul>
+
+    </body>
+</html>

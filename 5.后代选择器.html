@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>后代选择器</title>
+        <style>
+            /*想要把ol里所有li选出改为pink*/
+            ol li {
+                color: pink;
+            }
+            ul li a {
+                color: red;
+                text-decoration: none;
+            }
+            .abc li a {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>444</li>
+            <li>444</li>
+            <li>444</li>
+            <li><a href="#">5555</a> </li>
+        </ul>
+
+        <ul class="abc">
+            <li>444</li>
+            <li>444</li>
+            <li>444</li>
+            <li><a href="#">5555</a> </li>
+        </ul>
+
+
+        <ol>
+            <li>444</li>
+            <li>444</li>
+            <li>444</li>
+        </ol>
+
+    </body>
+</html>

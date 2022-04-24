@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>内边距padding</title>
+<!--        padding也会撑大盒子-->
+        <style>
+            div {
+                width: 200px;
+                /*如果盒子本身没有指定width或height属性,则padding不会撑开盒子*/
+                height: 200px;
+                background-color: pink;
+                /*padding-left: 20px;*/
+                /*padding-top: 30px;*/
+                /*padding-bottom: 10px;*/
+                /*padding-right: 20px;*/
+
+                /*一个值,代表上下左右都是5px*/
+                /*padding: 5px;*/
+                /*两个值,代表上下5,左右10*/
+                /*padding: 5px 10px;*/
+                /*三个值,代表上5px,左右10px,下20px*/
+                /*padding: 5px 10px 20px;*/
+                /*四个值,代表上右下左*/
+                padding: 5px 10px 20px 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            盒子内容是content盒子内容是content 盒子内容是content 盒子内容是content
+        </div>
+    </body>
+</html>

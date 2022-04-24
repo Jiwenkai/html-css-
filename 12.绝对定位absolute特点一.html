@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>绝对定位</title>
+<!--绝对定位的特点-->
+<!--1．如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位(Document文档)。-->
+
+        <style>
+            .father {
+                width: 500px;
+                height: 500px;
+                background-color: #00a4ff;
+            }
+            .son {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="son"></div>
+        </div>
+
+
+    </body>
+</html>

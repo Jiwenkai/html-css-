@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>精灵图</title>
+        <style>
+            /*使用精灵图核心∶*/
+            /*1．精灵技术主要针对于背景图片使用。就是把多个小背景图片整合到一张大图片中。*/
+            /*2．这个大图片也称为sprites精灵图或者雪碧图*/
+            /*3.移动背景图片位置，此时可以使用background-position。*/
+            /*4.移动的距离就是这个目标图片的x和y坐标。注意网页中的坐标有所不同*/
+            /*5.因为一般情况下都是往上往左移动，所以数值是负值。*/
+            .box1 {
+                width: 60px;
+                height: 60px;
+                margin: 100px auto;
+                background: url("sprites.png") no-repeat;
+                background-position: -182px 0;
+            }
+            .box2 {
+                width: 27px;
+                height: 25px;
+                margin: 200px auto;
+                background: url("sprites.png") no-repeat;
+                background-position: -155px -106px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </body>
+</html>

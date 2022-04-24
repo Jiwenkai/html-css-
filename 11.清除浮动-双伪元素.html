@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>双伪元素</title>
+    <style>
+      .clearfix:before,
+      .clearfix:after {
+        content: "";
+        display: table;
+      }
+      .clearfix:after {
+        clear: both;
+      }
+      .clearfix {
+        *zoom: 1;
+      }
+
+      .box {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      .damao {
+        background-color: purple;
+        float: left;
+        width: 200px;
+        height: 200px;
+      }
+      .ermao {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+      }
+      .footer {
+        background-color: black;
+        height: 200px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box clearfix">
+      <div class="damao">damao</div>
+      <div class="ermao">ermao</div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>

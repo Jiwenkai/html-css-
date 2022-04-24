@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>盒子模型</title>
+        <style>
+            div {
+                width: 300px;
+                height: 200px;
+                /*盒子会因为给了边框变大*/
+                /*边框粗细，单位为px*/
+                border-width: 5px;
+                /*边框的的样式 solid实线边框 dashed是虚线边框 dotted是点线边框*/
+                border-style: solid;
+                /*边框的颜色*/
+                border-color: pink;
+
+                /*边框的复合型写法(没有先后顺序差异,默认这个顺序):*/
+                /*border:border-width border-style border-color*/
+                border: 1px solid red
+                /*可以四部分分开写border-top bottom left right*/
+
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

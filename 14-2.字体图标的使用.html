@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            /*1.将下载的font文件夹放在根目录下*/
+            /*2.通过css引入*/
+            /*字体声明*/
+            @font-face {
+                font-family: 'icomoon';
+                src:  url('fonts/icomoon.eot?p4ssmb');
+                src:  url('fonts/icomoon.eot?p4ssmb#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?p4ssmb') format('truetype'),
+                url('fonts/icomoon.woff?p4ssmb') format('woff'),
+                url('fonts/icomoon.svg?p4ssmb#icomoon') format('svg');
+                font-weight: normal;
+                font-style: normal;
+                font-display: block;
+            }
+            span {
+                /*4.将字体设置为特殊字体*/
+                font-family: 'icomoon';
+                color: pink;
+                font-size: 100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--3.打开压缩的文件夹中的demo.html查看特殊字符-->
+        <span></span>
+
+    </body>
+</html>

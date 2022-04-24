@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>表单</title>
+    </head>
+    <body>
+        <!--表单用来收集用户信息的-->
+        <!--在HTML中，一个完整的表单通常由表单域、表单控件（也称为表单元素)和提示信息3个部分构成-->
+        <!--<form action="url地址” (用于接收并处理表单数据的服务器程序的url地址)
+                    method="提交方式”(用于设置表单数据的提交方式，其取值为get或者post)
+                    name="表单域名称">（用于指定表单的名称，以区分同一个页面中的多个表单）
+            </form>-->
+        <!---->
+        <form action="demo.php" method="post" name="name1">
+
+            <!--<label>标签用于绑定一个表单元素当点击<label>标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上用来增加用户体验.-->
+
+            <!--text是文本框-->
+            <!--maxlength可以规定最多输入字符数-->
+            <label for="text">用户名</label>：<input type="text" id="text" name="username" value="请输入用户名" maxlength="6"><br>
+
+            <!--password是密码框-->
+            密码：<input type="password" name="pwd"><br>
+
+            <!--radio是单选按钮-->
+            <!--name是表单元素的名字，单选和多选框都要有同样的名字，这里性别按钮必须要有相同的名字，才可以实现多选一-->
+            <!--单选按钮和复选框可以设置checked属性，当页面打开的时候就可以默认选中-->
+            性别：<label for="male">男</label><input type="radio" id="male" name="sex" value="男" checked="checked">
+                <label for="female">女</label><input type="radio" id="female" name="sex" value="女"><br>
+
+            <!--checkbox是多选框-->
+            爱好：吃饭<input type="checkbox" name="hobby" value="吃饭" checked="checked"> 睡觉<input type="checkbox" name="hobby" value="睡觉">打游戏<input type="checkbox" name="hobby" value="打游戏">
+            <br>
+
+            <!--提交按钮，点击后可以把表单域中的表单元素的值提交给后台服务器-->
+            <input type="submit" value="提交">
+
+            <!--重置按钮，默认值为重置，可以还原表单元素初始的默认状态-->
+            <input type="reset" value="重新设置">
+
+            <!--普通按钮，之后搭配javascrip脚本使用-->
+            <input type="button" value="获取验证码"><br>
+
+            <!--文件域 使用场景 上传文件使用的-->
+            上传头像:<input type="file"><br>
+
+            <!--下拉列表 select中至少包含一对option-->
+            籍贯：
+            <select>
+                <option>江苏</option>
+                <option selected="selected">浙江</option>
+                <!--在option中设置selected属性等于selected，当前项即为默认选中项-->
+                <option>广东</option>
+            </select>
+            <br>
+
+            <!--文本域元素-->
+            反馈:
+            <textarea cols="50" rows="5">默认文字</textarea>
+            <!--rows几行，cols一行写多少，不用记，后面用css-->
+
+        </form>
+
+    </body>
+</html>

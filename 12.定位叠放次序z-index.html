@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            .box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: 200px;
+            }
+            .a {
+                background-color: red;
+                /*若都未设置此值，则后来者居上*/
+                z-index: 1;
+            }
+            .b {
+                background-color: green;
+                left: 50px;
+                top: 50px;
+            }
+            .c {
+                left: 100px;
+                top: 100px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box a">1</div>
+        <div class="box b">2</div>
+        <div class="box c">3</div>
+    </body>
+</html>

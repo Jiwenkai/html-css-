@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>demo</title>
+        <style>
+            /*为了约束浮动元素位置我们网页布局一般采取的策略是:*/
+            /*先用标准流的父元素排列上下位置,之后内部子元素采取浮动排列左右位置.符合网页布局第一准侧.*/
+            .box {
+                width: 1200px;
+                height: 400px;
+                background-color: pink;
+                margin: 0 auto;
+            }
+            .left {
+                float: left;
+                width: 230px;
+                height: 400px;
+                background-color: purple;
+            }
+            .right {
+                float: right;
+                width: 970px;
+                height: 400px;
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="left">左侧</div>
+            <div class="right">右侧</div>
+        </div>
+
+    </body>
+</html>

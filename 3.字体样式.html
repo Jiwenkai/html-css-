@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>字体样式</title>
+        <style>
+          h2 {
+              /*font-family字体*/
+              font-family: "Microsoft YaHei UI Light";
+              /*font-size文字大小，在body中改全变，除了标题标签要另外写*/
+              font-size: 20px;
+              /*font-weight设置文本粗细,实际开发中多使用数字*/
+              font-weight: 400;/*正常normal，700加粗bold*/
+              /*字体样式*/
+              font-style: italic;
+          }
+          p {
+              /*复合属性,顺序不可变，必须保留size和family，其他可以省略*/
+              /*font: font-style font-weight font-size/line-height font-family*/
+              font: italic 700 16px 'Microsoft YaHei UI Light';
+          }
+          em {
+              /*多用来让倾斜的不在倾斜*/
+              font-style: normal;
+          }
+        </style>
+    </head>
+    <body>
+        <h2>jkkkkkkkkk</h2>
+        <p>123456</p>
+        <p>7891010213</p>
+        <p>45785415237</p>
+        <em>777</em>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+<!--小算法∶-->
+<!--1．让固定定位的盒子left: 50%.走到浏览器可视区（也可以看做版心）的一半位置。-->
+<!--2．让固定定位的盒子margin-left:版心宽度的一半距离。多走版心宽度的一半位置-->
+        <style>
+            .w {
+                width: 800px;
+                height: 1400px;
+                background-color: pink;
+                margin: 0 auto;
+            }
+            .fixed {
+                position: fixed;
+                top: 600px;
+                /*第一步*/
+                left: 50%;
+                /*第二步*/
+                /*margin-left: 400px;*/
+                /*为了美观多个一点距离*/
+                margin-left: 405px;
+                width: 50px;
+                height: 150px;
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fixed"></div>
+        <div class="w">版心盒子</div>
+    </body>
+</html>

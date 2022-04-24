@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>表格</title>
+        <style>
+            table {
+                width: 500px;
+                height: 300px;
+            }
+            table,td,th {
+                border:1px solid pink;
+                /*合并相邻的边框*/
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <!--表格用于展示数据-->
+        <!--表格内属性不常用，后面通过css设置-->
+        <!--align设置对齐方式（left，right，center），
+        border设置边框（1为有，默认没有），
+        cellpadding文字距离单元格边框的距离，默认为1
+        cellspacing设置单元格之间的间距，默认为2
+        width设置表格的宽度，height设置高度-->
+        <table align="center" cellpadding="20" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>姓名</th> <th>性别</th> <th>年龄</th>
+                    <!--th为表头单元格，其中的文字居中加粗显示-->
+                </tr>
+            </thead> <!--将表格分为两部分，thead为表格头部，tbody为表格主体，是表格结构更清晰，语义更明确-->
+            <tbody>
+                <tr>
+                    <td>aaaaaaa</td> <td>nan</td> <td>12</td>
+                </tr>
+                <tr>
+                    <td>bbbbbbb</td> <td>nan</td> <td>15</td>
+                </tr>
+                <tr>
+                    <td>ccccccc</td> <td>nv</td> <td>56</td>
+                </tr>
+                <tr>
+                    <td>ddddddd</td> <td>nv</td> <td>82</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>表格案例：小说排行榜</h2>
+        <table align="center" cellspacing="0" >
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近七日</th>
+                <th>相关链接</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td><img src="down.jpeg"> </td>
+                <td>46</td>
+                <td>123</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>鬼吹灯</td>
+                <td><img src="down.jpeg"> </td>
+                <td>65</td>
+                <td>160</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>鬼吹灯</td>
+                <td><img src="up.jpeg"> </td>
+                <td>4689</td>
+                <td>163</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>鬼吹灯</td>
+                <td><img src="down.jpeg"> </td>
+                <td>33</td>
+                <td>655</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>鬼吹灯</td>
+                <td><img src="up.jpeg"> </td>
+                <td>59</td>
+                <td>21</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+        </table>
+
+        <!--合并单元格案例-->
+        <!--合并单元格三步曲:
+        1．先确定是跨行还是跨列合并
+        2．找到目标单元格.写上合并方式=合并的单元格数量。比如: <td colspan= “2” ></td>
+        3．删除多余的单元格-->
+        <table align="center" border="1" cellpadding="20" cellspacing="0" width="500" height="500">
+            <thead>
+            <tr>
+                <th></th>
+                <th colspan="2"></th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="2"></td> <td></td> <td></td>
+            </tr>
+            <tr>
+                <td></td> <td></td>
+            </tr>
+            <tr>
+                <td></td> <td></td> <td></td>
+            </tr>
+            <tr>
+                <td></td> <td></td> <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

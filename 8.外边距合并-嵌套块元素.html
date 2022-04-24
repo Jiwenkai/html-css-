@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>嵌套块元素</title>
+        <style>
+            .father {
+                width: 400px;
+                height: 400px;
+                background-color: purple;
+                margin-top: 50px;
+                /*方法一:*/
+                /*border:1px solid;*/
+                /*方法二:*/
+                /*padding: 1px;*/
+                /*方法三*/
+                overflow: hidden;
+            }
+            .son {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+                /*margin-top: 100px;这样直接写会让父元素下来,称为塌陷问题*/
+                margin-top: 100px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="son"></div>
+        </div>
+
+    </body>
+</html>

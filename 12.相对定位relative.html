@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>相对定位</title>
+        <!--相对定位是元素在移动位置的时候，是相对于它原来的位置来说的(自恋型).-->
+        <style>
+            .box1 {
+                position: relative;
+                /*根据原来的顶下移100px*/
+                top: 100px;
+                /*根据原来的左边右移100px*/
+                left: 100px;
+
+                width: 200px;
+                height: 200px;
+                background-color: #00a4ff;
+            }
+            .box2 {
+                width: 200px;
+                height: 200px;
+                background-color: #ff8500;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </body>
+</html>
